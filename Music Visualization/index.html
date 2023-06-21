@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+    rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="lib/p5.min.js"></script>
+    <script src="lib/p5.dom.js"></script>
+    <script src="lib/p5.sound.js"></script>
+    
+    <script src="sketch.js"></script>
+    <script src="controlsAndInput.js"></script>
+    <script src="player.js"></script>
+    <script src="visualisations.js"></script>
+
+    <script src="newspectrum.js"></script>
+    <script src="ring.js"></script>
+    <script src="titleScreen.js"></script>
+    <script src="boxsplash.js"></script>
+    <script src="frequencyRings.js"></script>
+    <script src="audio.js"></script>
+
+
+
+
+    <!--<link rel="stylesheet" type="text/css" href="style.css">-->
+  <style> body {padding: 0; margin: 0;} </style>
+  </head>
+  <body>
+    <div id='player' class="Player">
+      <div class="controls">
+            <!--If this button is clicked then it will trigger the player.previousSong method to play the previous song-->
+          <button onclick="player.previousSong()" id="prev"><span class="material-icons-outlined" style="font-size: 50px;">
+          fast_rewind
+          </span> 
+          </button>
+          <!--If this button is clicked then it will trigger the player.playsong method to start playing or pausing the song-->
+          <button onclick="player.playSong()" id="play"><span class="material-icons-outlined" style="font-size: 50px;">
+              play_arrow
+              </span>
+          </button>
+          <!--If this button is clicked then it will trigger the player.nextSong method to play the next song-->
+          <button onclick="player.nextSong()" id="next"><span class="material-icons-outlined" style="font-size: 50px;">
+                  fast_forward
+                  </span>
+          </button>
+          <!--Song name for the player-->
+          <p id="song-name">Song Name</p>
+       </div>
+  </body>
+</html>
